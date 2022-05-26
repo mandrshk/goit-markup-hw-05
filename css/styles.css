@@ -378,6 +378,8 @@ li {
 .nav-menu:hover,
 .nav-menu:focus {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .auth-nav {
@@ -407,7 +409,7 @@ li {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   display: block;
   width: 100%;
   height: 4px;
@@ -425,6 +427,8 @@ li {
 .nav-menu .contacts-icon {
   fill: var(--secondary-color);
   margin-right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .item .nav-menu:hover .contacts-icon,
@@ -614,11 +618,14 @@ li {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 27px;
-  padding-bottom: 27px;
+
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
@@ -665,6 +672,8 @@ img {
 .social-link:hover,
 .social-link:focus {
   background: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .social-link:hover .socials-icon,
@@ -757,6 +766,8 @@ img {
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border: none;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .portfolio .portfolio-photos {
@@ -811,8 +822,7 @@ img {
   color: var(--primary-white-color);
 
   transform: translateY(101%);
-  transition: transform 250ms
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms;
 }
 
 .project-link:hover .animated-text,
@@ -886,11 +896,15 @@ img {
   border: 1px solid #2196f3;
   border-radius: 4px;
   cursor: pointer;
+  transition-duration: 2550ms;
+  transition-timing-function: linear;
 }
 
 .clients-link:hover .client-icon,
 .clients-link:focus .client-icon {
   fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .client-icon {
@@ -915,6 +929,8 @@ img {
 .connect-us:hover,
 .connect-us:focus {
   color: var(--primary-white-color);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .email-ws,
@@ -994,9 +1010,13 @@ img {
 .follow-us .socials-link:hover,
 .follow-us .socials-link:focus {
   background: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .follow-us .socials-link:hover .socials-icon,
 .follow-us .socials-link:focus .socials-icon {
   fill: var(--primary-white-color);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
