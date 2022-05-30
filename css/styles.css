@@ -747,8 +747,8 @@ img {
   padding-top: 6px;
   padding-bottom: 6px;
   border: transparent;
-  transition: background 250ms
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms, box-shadow 250ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio .portfolio-list {
   margin-bottom: 50px;
@@ -792,6 +792,8 @@ img {
 
 .project-link {
   display: block;
+  transition: box-shadow 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover,
